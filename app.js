@@ -1,7 +1,7 @@
 import React from 'react';
+var CheckBoxWithLabel = require('./CheckboxWithLabel');
 
-var test = () => {
-  console.log("Es6 ftw");
-}
-
-test();
+React.render(
+  <CheckBoxWithLabel labelOn="On" labelOff="Off" />,
+  document.getElementById('root')
+);
