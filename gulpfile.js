@@ -9,3 +9,10 @@ gulp.task('default', function() {
     .bundle();
   b.pipe(stream('main.js')).pipe(gulp.dest('public'));
 });
+
+gulp.task('pizza', function() {
+  var b = browserify('pizzaApp.js')
+    .transform(babelify)
+    .bundle();
+  b.pipe(stream('main.js')).pipe(gulp.dest('public'));
+})
