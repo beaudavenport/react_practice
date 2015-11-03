@@ -1,14 +1,15 @@
-// tutorial from https://facebook.github.io/jest/docs/tutorial-react.html#content
+//tutorial from https://facebook.github.io/jest/docs/tutorial-react.html#content
 jest.dontMock('../CheckboxWithLabel');
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import TestUtils from 'react-addons-test-utils';
+var React = require('react');
+var ReactDOM = require('react-dom');
+var TestUtils = require('react-addons-test-utils');
 
-const CheckboxWithLabel = require('../CheckboxWithLabel');
+var CheckboxWithLabel = require('../CheckboxWithLabel');
 
-describe('CheckboxWithLabel', () => {
-  it('changes the text after click', () => {
+describe('CheckboxWithLabel', function() {
+
+  it('changes the text after click', function() {
 
     var checkbox = TestUtils.renderIntoDocument(
       <CheckboxWithLabel labelOn="On" labelOff="Off" />
@@ -24,5 +25,4 @@ describe('CheckboxWithLabel', () => {
 
     expect(checkboxNode.textContent).toEqual('On');
   });
-
 });
