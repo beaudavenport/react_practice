@@ -13,6 +13,7 @@
   "devDependencies": {
     "babel-jest": "*",
     "babelify": "^6.4.0",
+    "gulp-connect": "^2.2.0",
     "jest-cli": "*",
     "react-addons-test-utils": "~0.14.0"
   },
