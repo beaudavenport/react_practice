@@ -1,12 +1,5 @@
 import React from 'react';
-
-var ToppingDisplay = React.createClass({
-  render: function() {
-    return (
-     <li><strong>{this.props.topping.topping}:</strong>${this.props.topping.price}</li>
-    );
-  }
-});
+import ToppingDisplay from './ToppingDisplay';
 
 var ToppingsList = React.createClass({
   render: function() {

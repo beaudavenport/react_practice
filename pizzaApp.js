@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-var ToppingsList = require('./ToppingsList');
+import ToppingsList from './components/ToppingsList';
+require('babel/register');
 
 var toppings = [
   {topping: 'Cheese', price: 1.99},
